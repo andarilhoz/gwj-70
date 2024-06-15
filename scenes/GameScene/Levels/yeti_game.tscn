@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp72adwcqro0a"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5ebqe"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_rgy7s"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.518027, -0.0923788, 0.850361, 0, 0.994151, 0.107999, -0.855364, -0.0559466, 0.514997, 6.67863, 3.62672, -4.82883)
+
+[node name="FloorPack" type="Node3D" parent="."]
+
+[node name="Floor1" type="MeshInstance3D" parent="FloorPack"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, -10)
+mesh = SubResource("PlaneMesh_5ebqe")
+skeleton = NodePath("../..")
+
+[node name="Floor2" type="MeshInstance3D" parent="FloorPack"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, -30)
+mesh = SubResource("PlaneMesh_5ebqe")
+skeleton = NodePath("../..")
+
+[node name="Floor3" type="MeshInstance3D" parent="FloorPack"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, -50)
+mesh = SubResource("PlaneMesh_5ebqe")
+skeleton = NodePath("../..")
+
+[node name="Floor4" type="MeshInstance3D" parent="FloorPack"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, -70)
+mesh = SubResource("PlaneMesh_5ebqe")
+skeleton = NodePath("../..")
+
+[node name="Floor5" type="MeshInstance3D" parent="FloorPack"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, -90)
+mesh = SubResource("PlaneMesh_5ebqe")
+skeleton = NodePath("../..")
+
+[node name="Floor6" type="MeshInstance3D" parent="FloorPack"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, -110)
+mesh = SubResource("PlaneMesh_5ebqe")
+skeleton = NodePath("../..")
+
+[node name="Floor7" type="MeshInstance3D" parent="FloorPack"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, -130)
+mesh = SubResource("PlaneMesh_5ebqe")
+skeleton = NodePath("../..")
+
+[node name="PlayerPlaceholder" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02629, -3.25223)
+mesh = SubResource("CapsuleMesh_rgy7s")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.209772, 0.97775, 0, -0.97775, -0.209772, 0, 0, 0)
+light_energy = 1.305
